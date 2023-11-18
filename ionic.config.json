@@ -1,0 +1,7 @@
+{
+  "name": "guiaService",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

@@ -1,0 +1,20 @@
+<app-header carnet="JD100100"></app-header>
+
+<ion-content [fullscreen]="true">
+  <ion-list>
+    <ion-list-header>
+      <ion-label><h2> Mis contactos </h2></ion-label>
+    </ion-list-header>
+    <ion-item *ngFor="let contact of contacts" detail>
+      <ion-avatar slot="start">
+        <ion-img alt="avatar" src="{{ contact.picture.thumbnail }}" />
+      </ion-avatar>
+      <ion-label>
+        <h3> <ion-icon name="person"></ion-icon> {{ contact.name.first + ' ' + contact.name.last }} </h3>
+        <p> <ion-icon name="logo-whatsapp"></ion-icon> {{ contact.phone }} </p>
+        <p> <ion-icon name="mail"></ion-icon> {{ contact.email }} </p>
+      </ion-label>
+    </ion-item>
+
+  </ion-list>
+</ion-content>
